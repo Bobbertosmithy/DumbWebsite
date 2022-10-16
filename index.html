@@ -8,14 +8,42 @@
         <!-- Meta elements give associated data to the html file-->
         <meta charset="utf-8">
         <title>Chungus' Site</title>
+        <!-- External CSS is placing the Interal CSS styles within a dedicated CSS file and linking it to the HTML DOC-->
+        <!-- /at the start of href goes to root of website-->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- The Style tag allows you to apply CSS formatting to every appearance of a html tag (internal CSS)-->
+        <!-- No need for quotes-->
+        <!-- Everything on a webpage are boxes so certain properties such as height and width are universal-->
+<!--        <style>-->
+<!--            hr {-->
+<!--                background-color: none;-->
+<!--                border-color: blue;-->
+<!--                border-style: dotted none none none;-->
+<!--                border-width: 10px;-->
+<!--                height: 2px;-->
+<!--                width: 10%;-->
+<!--            }-->
+<!--            @keyframes bounce {-->
+<!--                from {-->
+<!--                    transform: matrix(1, 0, 0, 1, 0, 0);-->
+<!--                    } to {-->
+<!--                    transform: matrix(1, 0, 0, 0.1, 0, 210);-->
+<!--                }-->
+<!--            }-->
+
+<!--        </style>-->
+
+
     </head>
 
-    <body>
+    <!-- style is CSS it needs semicolons. This is an example of inline CSS-->
+    <body style="background-color: #EEEEEE;">
         <table cellspacing="20">
             <tr>
                 <td>
                     <!-- image and source, Alt text can help with Search engine optimization -->
-                    <img src="Big Chungus Topper.jpg" alt="Chungy Pics">
+                    <img src="Big Chungus Topper.jpg" alt="Chungy Pics" style="animation: 3s infinite bounce alternate;" >
                 </td>
                 <td>
                     <!-- <a> anchor tags are used to make hyperlinks -->
@@ -28,11 +56,13 @@
         </table>
 
         <hr>
-        <h3>I like to read books</h3>
+        <!-- Class attribute in an HTML tag can be used to differentiate similar HTML elements to be formatted
+        differently by external/internal CSS Code. Multiple classes can be withing the "" after class=-->
+        <h3 class="books">I like to read books</h3>
         <ul>
             <li>Frankenstein</li>
             <li>The Prince</li>
-            <li>Bismarck: A life</li>
+            <li id="nonfic">Bismarck: A life</li>
             <li>Neuromancer</li>
             <li>Paradise Lost</li>
             <li>The Gunslinger</li>

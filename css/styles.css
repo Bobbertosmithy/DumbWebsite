@@ -1,0 +1,51 @@
+/* CSS comments
+
+*/
+
+
+/* TAG SELECTORS
+ Hover is a pseudo class that will change the element's parameters when the hover condition is met
+ */
+h1 {
+    color: #222831;
+}
+
+h1:hover {
+    transform: scale(3);
+}
+
+h3 {
+    color: #00ADB5;
+}
+
+hr {
+    background-color: none;
+    border-color: #393E46;
+    border-style: dotted none none none;
+    border-width: 10px;
+    height: 2px;
+    width: 10%;
+}
+@keyframes bounce {
+    from {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        } to {
+        transform: matrix(1, 0, 0, 0.1, 0, 210);
+    }
+}
+
+/* CLASS SELECTORS */
+
+.books {
+    color: #222831
+}
+
+/* ID SELECTORS
+Classes and IDs are similar in that they override the function of tag selectors
+an ID is unique to a single HTML element per page whereas class can be placed in multiple HTML elements
+IDs are not used very often and are discouraged
+*/
+
+#nonfic {
+    color: blue;
+}
